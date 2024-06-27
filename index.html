@@ -11,6 +11,9 @@
     <button ondblclick="button2()">Button 2</button>
     <h2>Key Event</h2>
     <input onkeydown="keydown()" onkeypress="keypress()" onkeyup="keyup()" type="text"/>
+    <h2>Mouse Event</h2>
+    <img src="images.jpeg" onmouseover="mouseover()" 
+    onmousedown="mousedown()" onmouseleave="mouseleave()" />
 </body>
 <script>
     function button1(){
@@ -27,6 +30,16 @@
     }
     function keyup(){
         console.log("key up");
+    }
+
+    function mouseover(){
+        console.log("mouse over");
+    }
+    function mousedown(){
+        console.log("mouse down");
+    }
+    function mouseleave(){
+        console.log("mouse leave");
     }
 </script>
 </html>
