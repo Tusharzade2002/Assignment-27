@@ -6,8 +6,11 @@
     <title>Assignment 27</title>
 </head>
 <body>  
+    <h2>Click Event</h2>
     <button onclick="button1()">Button 1</button>
     <button ondblclick="button2()">Button 2</button>
+    <h2>Key Event</h2>
+    <input onkeydown="keydown()" onkeypress="keypress()" onkeyup="keyup()" type="text"/>
 </body>
 <script>
     function button1(){
@@ -15,6 +18,15 @@
     }
     function button2(){
         console.log("double clicked button 2");
+    }
+    function keydown(){
+        console.log("key down");
+    }
+    function keypress(){
+        console.log("key press");
+    }
+    function keyup(){
+        console.log("key up");
     }
 </script>
 </html>
